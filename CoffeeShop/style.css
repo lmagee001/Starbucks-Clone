@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: rgba(0,0,0,.87);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{ /*adjusts styling for ALL the links on the website*/
+    color: black;
+}
+
+header{
+    height: 101px;
+    z-index: 10;
+    position: relative;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+
+}
+
+.header-container{
+    max-width: 1440px;
+    margin: 0 auto; /*Centers the container*/
+    background-color: white;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 55px;
+    width: 55px;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.left-nav{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.left-nav nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.left-nav nav ul li{
+    text-transform: uppercase;   
+    padding-left: 24px;
+    font-weight: 750;
+    letter-spacing: 0.1em;
+    cursor: pointer; /* adds the little hand over the link*/
+}
+
+.left-nav nav ul li:hover{
+    color: #008248; /* creates a green color over clickable items the user is hovering over.*/
+
+}
+
+.right-nav{
+    display: flex;
+    align-items: center;
+}
+
+.find-store{
+    display: flex;
+    align-items: center;
+    font-weight: 600!important;
+    margin-right: 40px;
+    font-size: 15px;
+}
+
+.find-store i{
+    padding-right: 8px;
+    font-size: 24px;
+}
+
+.find-store:hover{
+    color: #008248;
+    cursor: pointer;
+}
+
+.sign-in, .join-now{
+    padding: 7px 16px;
+    border: 1px solid;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.2;
+}
+.sign-in{
+    margin-right: 5px;
+}
+
+.sign-in:hover{
+    background-color: rgba(0,0,0,.06);
+    cursor: pointer;
+    transition: all .2 ease;
+}
+.join-now{
+    background-color: black;
+    color: white;
+    
+}
+
+.join-now:hover{
+    background-color: rgba(0,0,0,.7);
+    border-color: rgba(0,0,0,.7);
+    cursor: pointer;
+    transition: all .2 ease;
+}
+
+

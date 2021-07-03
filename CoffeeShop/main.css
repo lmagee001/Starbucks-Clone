@@ -1,0 +1,148 @@
+.main-container{
+    max-width: 1440px; 
+    margin: 0 auto; /*Centers the container*/
+}
+
+.announcments{ /*Targets the announcment containter as a whole*/
+    display: flex;
+    background-color:#d8e8e3;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.announcments span{ /* targeting the text specifically*/
+    padding-top: 3.2rem;
+    padding-top: 3.2rem; /*REM = relative to the font size of the body */
+    max-width: 60%;
+    text-align: center;
+    font-size: 19px;
+    line-height:  1.75;
+    font-weight: 500; /*adjusts the boldness of the font*/
+}
+
+.left-right-section{
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.left-right-section .text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f8f6;
+    color: #1e3932;
+    padding: 32px 48px;
+}
+
+.left-right-section .image{
+    width: 50%;
+    display: flex; /*use flex instead of a static pixel count*/
+}
+
+.left-right-section .image img{ /*Targets the actual image of the image div*/
+    width: 100%;
+}
+
+.text h1, .text h3{
+    margin: 0;
+    font-weight: 400;
+}
+
+.text h1{
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.text h3{
+    margin-bottom: 32px;
+    font-size: 19px;
+    text-align: center;
+}
+
+.text .cta{ 
+    padding: 7px 16px;
+    border: 1px solid;
+    border-radius: 50px;
+    color: #1e3932;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.text .cta:hover{
+    padding: 7px 32px;
+    background-color: rgba(30,57,50,.1);
+    transition: all 0.3s ease; /* what are you transitioning, for how many seconds, what type of transition*/
+}
+
+.chill .text h1{ /*targets the "Chill section text specifically"*/
+font-weight: 700;
+line-height: 1.2;
+font-size: 30px;
+letter-spacing: 8px;
+}
+
+.chill .text h3{
+    font-size: 24px;
+    line-height: 1.5;
+
+}
+
+.chill .text{
+    background-color: #f2f0eb;
+}
+
+section{
+    display: flex;
+}
+
+.top-bottom-section{
+    width: 50%;
+}
+
+.section-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bottom-section .image{
+    width: 100%;
+}
+
+.top-bottom-section .image  img{
+    width: 100%;
+}
+
+
+.top-bottom-section .text{
+    display: flex;
+    flex-direction: column; /*makes the text align in a column*/
+}
+
+.top-bottom-section .text h3{
+font-weight: 400;
+}
+
+.cta-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-bottom-section: :first-child .section-container{
+    margin-right: 25px;
+
+}
+
+.top-bottom-section:last-child .section-container{
+    margin-left: 25px;
+}
+
+.top-bottom-section .image{
+    display: flex;
+}
+
+.top-bottom-section .text{
+    background-color: #d4e9e2;
+}
